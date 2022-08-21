@@ -1,0 +1,22 @@
+@use '../../styles/palette' as colors;
+
+.header {
+  width: 100%;
+  background-color: colors.$purple;
+
+  &__inner {
+    padding: 1.125em 0.75em;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+
+  &__leftBlock, &__rightBlock {
+    display: flex;
+    align-items: center;
+  }
+
+  &__leftBlock, &__rightBlock {
+    gap: 1.625em;
+  }
+}
