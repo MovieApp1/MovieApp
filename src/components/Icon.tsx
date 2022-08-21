@@ -1,4 +1,5 @@
 import React from "react";
+import sprite from '../assets/icons-sprite.svg';
 
 interface IconProps {
   width: string;
@@ -6,17 +7,17 @@ interface IconProps {
   id: string;
   fill?: string;
   block: string;
-  href: string;
 }
 
-export const Icon = function ({ id, width, height, block, href, fill }: IconProps) {
+export const Icon = function ({ id, width, height, block, fill }: IconProps) {
   return (
     <svg className={`${block}__${id}-icon`}
          fill={fill ? fill : undefined}
          width={width}
          height={height}
+         viewBox='0 0 24 24'
     >
-    <use xlinkHref={`${href}#${id}`}></use>
+    <use href={`${sprite}#${id}`} />
     </svg>
   )
 }
