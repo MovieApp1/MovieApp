@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "craco": "0.0.3",
-    "node-sass": "7.0.1"
+    "craco-alias": "3.0.1",
+    "sass": "1.54.4"
   }
 }
