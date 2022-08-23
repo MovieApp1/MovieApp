@@ -1,10 +1,17 @@
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @use '../src/styles/palette' as colors;\d\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   Header.module.scss 1:1  root stylesheet";
+.header {
+  width: 100%;
+  background-color: #2F2644;
+}
+.header__inner {
+  padding-block: 1.125em;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+.header__leftBlock, .header__rightBlock {
+  display: flex;
+  align-items: center;
+}
+.header__leftBlock, .header__rightBlock {
+  gap: 1.625em;
 }
