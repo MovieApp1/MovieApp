@@ -8,7 +8,7 @@ const Header = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.header__inner}>
+      <div className={`${styles.header__inner} _container`}>
         <div className={styles.header__leftBlock}>
           <BurgerButton></BurgerButton>
           <svg width="88" height="30" viewBox="0 0 88 30" fill="none" xmlns="http://www.w3.org/2000/svg">
