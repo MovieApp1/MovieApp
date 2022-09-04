@@ -1,8 +1,8 @@
-@use '../../../../styles/palette' as colors;
+@use '@styles/palette' as colors;
 
 .slider {
   width: 100%;
-  max-height: 330px;
+  margin-bottom: 1.25em;
 
   &__inner {
     width: 100%;
@@ -12,6 +12,7 @@
     position: relative;
     display: flex;
     overflow: hidden;
+    max-height: 450px;
   }
 
   &__button {
@@ -39,7 +40,6 @@
 
   &__imgContainer {
     width: 100%;
-    max-height: 450px;
   }
 
   &__img {
@@ -54,6 +54,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: colors.$black;
+    padding-block: 1em;
   }
 
   &__infoTextWrapper {
