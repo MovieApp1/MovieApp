@@ -1,7 +1,8 @@
 import React from "react";
-import { BurgerButton } from "../BurgerButton/BurgerButton";
-import { Icon } from "../Icon";
+import { BurgerButton } from "@components/BurgerButton/BurgerButton";
+import { Icon } from "@components/Icon";
 import styles from "./Header.module.scss";
+
 
 const Header = () => {
   const blockName = 'header';
