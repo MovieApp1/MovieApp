@@ -1,0 +1,49 @@
+@use '../../../../styles/palette' as colors;
+
+.topItem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  color: colors.$light-grey;
+
+  &__leftBlock {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5em;
+  }
+
+  &__itemIndex {
+    font-size: 1.125em;
+    font-weight: 800;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 2px;
+      height: 1em;
+      background-color: colors.$yellow;
+      position: absolute;
+      top: 50%;
+      translate: 0 -50%;
+      right: -0.5em;
+    }
+  }
+
+  &__itemTitle {
+    margin-bottom: 0.5em;
+  }
+
+  &__itemScore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: colors.$yellow;
+    color: colors.$black;
+    font-weight: 800;
+    text-align: center;
+  }
+}
